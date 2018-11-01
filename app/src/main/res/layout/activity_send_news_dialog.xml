@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/mainBackColor"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/left_right_margin"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_text_size_16"
+        android:text="选择类型"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adapter_select_grey"
+        android:text="拍照"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/item_1"/>
+    <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></include>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adapter_select_grey"
+        android:text="相册"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/item_2"/>
+    <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></include>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adapter_select_grey"
+        android:text="取消"
+        android:id="@+id/cancel"/>
+</LinearLayout>

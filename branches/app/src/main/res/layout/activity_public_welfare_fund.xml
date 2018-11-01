@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="@dimen/left_right_margin"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size_16"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:text="截至昨日捐赠总数"/>
+
+        <com.doumee.huitongying.view.CountView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:id="@+id/gold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/top_bottom_margin"
+            android:textStyle="bold"
+            android:text="1000.00"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:textSize="@dimen/content_text_size_16"
+        android:textColor="@color/grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:text="捐赠明细"/>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/ll_bottom"
+        ></include>
+    <com.doumee.huitongying.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh"
+        >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view"
+            android:background="@color/white">
+
+        </ListView>
+
+    </com.doumee.huitongying.view.RefreshLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:drawableRight="@mipmap/arrow_right_gray"
+        android:paddingRight="@dimen/left_right_margin"
+        android:text="实名认证"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:textSize="@dimen/content_button_text_size_16"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:id="@+id/tv_shiming_certification_center"
+        android:drawablePadding="@dimen/left_right_margin"
+        android:background="@drawable/button_input_status_selector"/>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:drawableRight="@mipmap/arrow_right_gray"
+        android:paddingRight="@dimen/left_right_margin"
+        android:text="商户认证"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:textSize="@dimen/content_button_text_size_16"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:id="@+id/tv_shanghu_certification_center"
+        android:drawablePadding="@dimen/left_right_margin"
+        android:background="@drawable/button_input_status_selector"
+        android:visibility="gone"
+        />
+</LinearLayout>

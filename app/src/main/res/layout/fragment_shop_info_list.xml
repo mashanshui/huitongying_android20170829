@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_height="1px"
+
+        ></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_shop_info_list_check">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:divider="@drawable/line_divider_bg"
+                    android:showDividers="middle"
+                    android:background="@drawable/public_bg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:drawableLeft="@mipmap/address_icon"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:id="@+id/tv_shop_address"
+                        android:textSize="@dimen/content_text_size_16"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:drawableLeft="@mipmap/phone_icon"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:id="@+id/tv_shop_phone"
+                        android:textSize="@dimen/content_text_size_16"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:textColor="@color/black"
+                        android:text="商户详情"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:drawableLeft="@mipmap/business_icon"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:id="@+id/tv_shop_details"
+                        android:textSize="@dimen/content_text_size_16"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:textColor="@color/black"
+                        android:text="营业时间:"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:drawableLeft="@mipmap/time_icon"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:id="@+id/tv_shop_hours"
+                        android:textSize="@dimen/content_text_size_16"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_bar"
+                    android:text="评论详情"
+                    android:background="@drawable/public_bg"
+                    android:layout_marginTop="@dimen/top_bottom_margin"
+                    android:padding="@dimen/left_right_margin"
+                    />
+
+                <com.huixiangshenghuo.app.view.MyListView
+                    android:id="@+id/lv_shop_comment"
+                    android:layout_width="match_parent"
+                    android:divider="@null"
+                    android:layout_height="wrap_content">
+                </com.huixiangshenghuo.app.view.MyListView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_shop_info_list_check"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:text="去买单"
+        android:textColor="@color/white"
+        android:background="?attr/colorPrimary"
+        android:textSize="@dimen/bottom_button_text_size_18"
+        />
+</RelativeLayout>

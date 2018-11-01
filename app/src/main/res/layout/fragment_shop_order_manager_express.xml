@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填写快递信息"
+            android:textSize="@dimen/content_text_size_16"
+            android:id="@+id/tv_shangpin_category_tite"
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_shop_order_manager_express_kd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="设置快递名称"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/content_text_size_16"
+        android:background="@drawable/button_heise_bg"
+        />
+
+    <EditText
+        android:id="@+id/et_shop_order_manager_express_dh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="设置快递单号"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/content_text_size_16"
+        android:background="@drawable/button_heise_bg"
+
+        />
+    <!--android:inputType="phone"
+        android:digits="1234567890"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <Button
+            android:text="取消"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_qx"
+            android:layout_weight="1"
+            android:background="@color/LightGrey"
+            android:textColor="@color/white"
+            android:textSize="@dimen/content_text_size_16"
+            />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <Button
+            android:text="确认"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_qr"
+            android:layout_weight="1"
+            android:background="@color/app_main_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/content_text_size_16"
+            />
+    </LinearLayout>
+
+</LinearLayout>

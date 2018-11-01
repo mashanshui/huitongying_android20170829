@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/add"
+            android:id="@+id/iv_shp_icon"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:text="上传商品图片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_below="@+id/iv_shp_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="填写商品名称"
+        android:padding="10dp"
+        android:textSize="@dimen/content_text_size_16"
+        android:id="@+id/et_shp_name"
+        android:background="@null"
+        />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:text="设置价格（元）"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView2"
+            android:textSize="@dimen/content_text_size_16"
+            />
+
+        <EditText
+            android:hint="请输入价格"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/content_text_size_16"
+            android:id="@+id/tv_shp_price"
+            android:background="@null"
+            android:inputType="phone"
+            android:digits="1234567890."
+            />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_height="1px"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:text="库存数量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_kucun_sl"
+            android:textSize="@dimen/content_text_size_16"
+            />
+
+        <EditText
+            android:hint="请输入库存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tv_kucun_sl"
+            android:layout_toEndOf="@+id/tv_kucun_sl"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/content_text_size_16"
+            android:id="@+id/et_shp_inventory"
+            android:background="@null"
+            android:inputType="phone"
+            android:digits="1234567890"
+            />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_height="1px"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/rl_shp_classification"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:text="商品分类"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_shp"
+            android:textSize="@dimen/content_text_size_16"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/jt"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView2"/>
+
+        <TextView
+            android:text="选择分类"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size_16"
+            android:id="@+id/tv_shp_classification"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toStartOf="@+id/imageView2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/rl_shp_pics"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:text="商品相册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_pics"
+            android:textSize="@dimen/content_text_size_16"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/jt"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView3"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

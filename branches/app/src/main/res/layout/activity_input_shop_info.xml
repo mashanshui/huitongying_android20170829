@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huixiangshenghuo.app.ui.mine.InputShopInfoActivity">
+    <include layout="@layout/title_bar_1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"></include>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/public_bg"
+        android:layout_marginTop="@dimen/top_bottom_margin"
+        android:hint="请输入商家详情"
+        android:textSize="@dimen/content_text_size_14"
+        android:padding="@dimen/left_right_margin"
+        android:gravity="left"
+
+        android:id="@+id/content"/>
+
+</LinearLayout>

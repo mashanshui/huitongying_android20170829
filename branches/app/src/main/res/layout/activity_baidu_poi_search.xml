@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huixiangshenghuo.app.comm.baidu.BaiduPoiSearchActivity">
+
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+    <com.doumee.huitongying.view.EditTextWithDel
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:id="@+id/search_bar"
+        android:layout_margin="@dimen/left_right_margin"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:hint="搜索商铺地址"
+        android:background="@drawable/edittext_bg"/>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/search_bar"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmapView"
+        android:background="@color/lineColor"
+        android:padding="@dimen/left_right_margin"
+        android:text=""
+        android:textColor="@color/Grey"
+        android:id="@+id/label_1"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label_1"
+        android:id="@+id/list_view"
+        android:background="@color/white"
+        ></ListView>
+</LinearLayout>

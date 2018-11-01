@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_gg_home_mall"
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:layout_height="136dp"
+        android:visibility="gone"
+
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_classification_home_mall"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        android:layout_height="100dp"
+
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/iv_group_home_mall">
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_6"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/relativeLayout22"
+            android:layout_toRightOf="@+id/relativeLayout22"
+            android:text="最新上架"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_text_size_16"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout22"
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimaryDark">
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></include>
+</LinearLayout>

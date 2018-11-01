@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_pic_recommend"
+        android:src="@drawable/business_default"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"/>
+
+    <TextView
+        android:id="@+id/tv_name_recommend"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="意大利起司泡酒 意大利进口起泡酒"
+        android:textSize="@dimen/content_text_size_16"
+
+        />
+    <!--
+    android:textColor="@color/lightGrey"
+    android:textColor="@color/black"
+    -->
+
+    <TextView
+        android:id="@+id/tv_price_recommend"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="@dimen/content_text_size_16"
+        android:text="￥109"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_6"
+        android:layout_marginTop="@dimen/margin_6"
+        />
+
+</LinearLayout>

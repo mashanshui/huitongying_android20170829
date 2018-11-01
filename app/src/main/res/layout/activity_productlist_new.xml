@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+
+    <RadioGroup
+        android:id="@+id/rg_productlidt_new"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_sales_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="销量最好"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:textColor="@drawable/order_tab_text_selector"
+            android:checked="true"/>
+
+        <View
+            android:gravity="center"
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/grey"
+            ></View>
+
+        <RadioButton
+            android:id="@+id/rb_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="离我最近"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:textColor="@drawable/order_tab_text_selector"/>
+
+        <View
+            android:gravity="center"
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/grey"
+            ></View>
+
+        <RadioButton
+            android:id="@+id/rb_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="评论最好"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:textColor="@drawable/order_tab_text_selector"/>
+
+        <View
+            android:gravity="center"
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/grey"
+            ></View>
+
+        <RadioButton
+            android:id="@+id/rb_shelves"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="最新上架"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:textColor="@drawable/order_tab_text_selector"/>
+    </RadioGroup>
+    <!--
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_sales_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="销量最好"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/content_button_text_size_16"
+                    />
+
+
+    </LinearLayout>
+
+            <View
+                android:gravity="center"
+                android:layout_width="1px"
+                android:layout_height="20dp"
+                android:background="@color/grey"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="离我最近"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_button_text_size_16"
+                    />
+            </LinearLayout>
+
+            <View
+                android:gravity="center"
+                android:layout_width="1px"
+                android:layout_height="20dp"
+                android:background="@color/grey"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评论最好"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_button_text_size_16"
+                    />
+            </LinearLayout>
+
+            <View
+                android:gravity="center"
+                android:layout_width="1px"
+                android:layout_height="20dp"
+                android:background="@color/grey"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_shelves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最新上架"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_button_text_size_16"
+                    />
+             </LinearLayout>
+    -->
+
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></include>
+
+    <com.huixiangshenghuo.app.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh"
+        android:layout_marginTop="6dp"
+        >
+
+        <ListView
+            android:id="@+id/lv_productlist_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </com.huixiangshenghuo.app.view.RefreshLayout>
+
+
+</LinearLayout>

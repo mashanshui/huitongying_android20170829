@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_text_size_16"
+        android:gravity="center"
+        android:text="温馨提示"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_text_size_14"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:id="@+id/content"
+        android:text="尊敬的会员您好，提现100惠宝，需要扣除10元手续费，实际到账90元"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:orientation="horizontal"
+        android:divider="@drawable/line_divider_bg"
+        android:layout_marginTop="@dimen/top_bottom_margin"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_input_status_selector"
+            android:text="取消"
+            android:textSize="@dimen/content_text_size_16"
+            android:textColor="@color/blue"
+            android:id="@+id/cancel"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_input_status_selector"
+            android:text="确定"
+            android:textSize="@dimen/content_text_size_16"
+            android:textColor="@color/blue"
+            android:id="@+id/yes"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

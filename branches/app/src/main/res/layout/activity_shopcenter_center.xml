@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <!--    <com.doumee.huitongying.view.RefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_sx_shopcenter_center">-->
+
+    <!--        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >-->
+
+    <!--                <LinearLayout
+                        android:id="@+id/ll_income"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计收入（元）"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/content_text_size_14"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="@dimen/top_bottom_margin"
+                            android:textStyle="bold"
+                            android:id="@+id/tv_shopcenter_total_income"
+                            android:textSize="35sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#df3f3f"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center|center_vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0（单）"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/white"
+                                android:id="@+id/tv_shopcenter_month_saleNum"
+                                android:textSize="@dimen/content_button_text_size_16"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="本月销量"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/white"
+
+                                />
+
+                        </LinearLayout>
+
+                        <View
+
+                            android:layout_width="1px"
+                            android:layout_height="30dp"
+                            android:background="@color/white"
+                            ></View>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center|center_vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/white"
+                                android:id="@+id/tv_shopcenter_month_income"
+                                android:textSize="@dimen/content_button_text_size_16"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="本月收入"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/white"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/left_right_margin"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单明细"
+                            android:textSize="@dimen/content_text_size_16"
+                            />
+
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"></include>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:text="店铺管理"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:textSize="@dimen/content_button_text_size_16"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/black"
+                        android:id="@+id/tab0"
+                        android:drawableLeft="@mipmap/d"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"
+
+                        />
+
+                    <include
+                        layout="@layout/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:layout_height="1px"></include>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:text="商品管理"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:textSize="@dimen/content_button_text_size_16"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/black"
+                        android:id="@+id/tab1"
+                        android:drawableLeft="@mipmap/x"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"
+
+                        />
+
+                    <include
+                        layout="@layout/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:layout_height="1px"></include>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:text="订单管理"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:textSize="@dimen/content_button_text_size_16"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/black"
+                        android:id="@+id/tab2"
+                        android:drawableLeft="@mipmap/dd"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"/>
+
+                    <include
+                        layout="@layout/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:layout_height="1px"></include>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:text="公告管理"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:textSize="@dimen/content_button_text_size_16"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/black"
+                        android:id="@+id/tab5"
+                        android:drawableLeft="@mipmap/gg"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"/>
+
+                    <include
+                        layout="@layout/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:layout_height="1px"></include>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:text="相册管理"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:textSize="@dimen/content_button_text_size_16"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/black"
+                        android:id="@+id/tab6"
+                        android:drawableLeft="@mipmap/cam"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"/>
+
+                    <include
+                        layout="@layout/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:layout_height="1px"></include>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_bar"
+                        android:drawableRight="@mipmap/arrow_right_gray"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:text="商品类别"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:textSize="@dimen/content_button_text_size_16"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/black"
+                        android:id="@+id/tab3"
+                        android:drawableLeft="@mipmap/j"
+                        android:drawablePadding="@dimen/left_right_margin"
+                        android:background="@drawable/button_input_status_selector"/>
+
+                    <include
+                        layout="@layout/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:layout_height="1px"></include>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="添加商品"
+                        android:textColor="@color/white"
+                        android:background="@color/app_main_color"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="60dp"
+                        android:textSize="16sp"
+                        android:id="@+id/bt_tianjia"
+                        android:layout_marginBottom="30dp"
+                        />
+                </LinearLayout>
+
+    <com.doumee.huitongying.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_sx_shopcenter_center">
+                <com.doumee.huitongying.view.MyListView
+                    android:id="@+id/lv_shopcenter_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.doumee.huitongying.view.MyListView>
+
+
+        <!--            </LinearLayout>
+                </ScrollView>-->
+    </com.doumee.huitongying.view.RefreshLayout>
+</LinearLayout>

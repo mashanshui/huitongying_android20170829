@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:gravity="center"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="请输入惠宝支付密码"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/close"
+            android:background="@null"
+            android:textColor="@color/grey"
+            android:layout_marginRight="@dimen/left_right_margin"
+            android:src="@mipmap/close_btn"
+            android:textSize="@dimen/content_text_size_16"/>
+    </RelativeLayout>
+    <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></include>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@drawable/public_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:maxLength="8"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:id="@+id/pay_password"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/help"
+        android:background="@null"
+        android:textColor="@color/grey"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/top_bottom_margin"
+        android:text="忘记密码？"
+        android:textSize="@dimen/content_text_size_14"/>
+
+    <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="1px"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar"
+            android:gravity="center"
+            android:textSize="@dimen/content_text_size_16"
+            android:id="@+id/cancel"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:background="@drawable/button_input_status_selector"
+            android:text="取消"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar"
+            android:gravity="center"
+            android:textSize="@dimen/content_text_size_16"
+            android:id="@+id/pay"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:background="@drawable/button_input_status_selector"
+            android:text="确定"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

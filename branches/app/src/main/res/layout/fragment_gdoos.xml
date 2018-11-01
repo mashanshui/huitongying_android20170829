@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_above="@+id/rl_fragmentGdoos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_gdoosCategory_fragmentGdoos"
+            style="@style/ListViewDefaultStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/dark_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/light_gray"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_gdoosDetail_fragmentGdoos"
+                style="@style/ListViewDefaultStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_noDate_fragmentGdoos"
+                android:layout_marginTop="10dp"
+                style="@style/textSizeSmallAPP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_no_data_gdoosCategory"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fragmentGdoos"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_color"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_shopCart_fragmentGdoos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_shop_cart"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_curentCount_fragmentGdoos"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_tv_corner"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/tv_totalPrice_fragmentGdoos"
+            style="@style/textSizeSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/iv_shopCart_fragmentGdoos"
+            android:layout_centerVertical="true"
+            android:text="@string/text_no_order"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_startSend_fragmentGdoos"
+            style="@style/textSizeSmall"
+            android:layout_width="@dimen/width_text_goodsFragment"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/bussiness_allDone"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="@dimen/text_padding_left"
+            android:text="@string/text_startSend_fragmentGdoos"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/left_right_margin">
+
+        <ImageView
+            android:layout_width="@dimen/face_width_56"
+            android:layout_height="@dimen/face_height_56"
+            android:scaleType="centerCrop"
+            android:id="@+id/face"
+            android:src="@mipmap/header_img_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/face"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:textSize="@dimen/content_text_size_16"
+            android:textColor="@color/black"
+            android:id="@+id/name"
+            android:text="lxz(15115601942)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/face"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            android:layout_below="@+id/name"
+            android:id="@+id/level"
+            android:layout_marginTop="5dp"
+            android:text="VIP会员"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/face"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            android:layout_below="@+id/level"
+            android:id="@+id/date"
+            android:layout_marginTop="5dp"
+            android:text="推荐时间：2017-1-4"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

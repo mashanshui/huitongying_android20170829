@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+
+    <!--android:focusableInTouchMode="true"
+              android:focusable="true"-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_businessHead"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:background="?attr/colorPrimary">
+            <!--android:alpha="0"-->
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_businessHead"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingTop="16dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="@dimen/label_bar"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:layout_marginRight="@dimen/left_right_margin"
+                android:text="商品搜索"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/left_right_margin"
+                android:id="@+id/search_bar"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:background="@drawable/bg_title_text_business_new"
+                android:textSize="@dimen/content_text_size_14"
+
+                android:drawableLeft="@mipmap/search_grey"/>
+            <!--android:textColor="@color/black"-->
+
+            <RelativeLayout
+                android:id="@+id/rl_gwc_home_mall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fo_cart_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/gwcb"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/fo_cart_dot_img"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:src="@drawable/bg_circle_white"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.doumee.huitongying.view.RefreshScrollviewLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_sx_home_mall"
+
+        >
+
+        <com.doumee.huitongying.view.MyFreshScrollview
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+
+                       >
+
+                       <com.bigkoo.convenientbanner.ConvenientBanner
+                           android:id="@+id/cb_gg_home_mall"
+                           android:layout_width="match_parent"
+                           android:background="@color/colorGray"
+                           android:layout_height="136dp"
+                           android:visibility="gone"
+
+                           />
+
+                       <android.support.v4.view.ViewPager
+                           android:id="@+id/vp_classification_home_mall"
+                           android:layout_width="match_parent"
+                           android:paddingTop="10dp"
+                           android:background="@color/white"
+                           android:layout_height="100dp"
+
+                           />
+
+                       <RadioGroup
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:background="@color/white"
+                           android:gravity="center"
+                           android:id="@+id/iv_group_home_mall">
+                       </RadioGroup>
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="40dp"
+                           android:background="@color/white"
+                           android:layout_marginTop="@dimen/margin_6"
+                           >
+
+                           <TextView
+
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerVertical="true"
+                               android:layout_marginLeft="11dp"
+                               android:layout_marginStart="5dp"
+                               android:layout_toEndOf="@+id/relativeLayout22"
+                               android:layout_toRightOf="@+id/relativeLayout22"
+                               android:text="最新上架"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/content_text_size_16"/>
+
+                           <RelativeLayout
+                               android:id="@+id/relativeLayout22"
+                               android:layout_width="4dp"
+                               android:layout_height="20dp"
+                               android:layout_alignParentLeft="true"
+                               android:layout_marginLeft="10dp"
+                               android:layout_alignParentStart="true"
+                               android:layout_centerVertical="true"
+                               android:background="@color/colorPrimaryDark">
+                           </RelativeLayout>
+
+                       </RelativeLayout>
+
+                       <include
+                           layout="@layout/line_view"
+                           android:layout_width="match_parent"
+                           android:layout_height="1px"></include>
+
+                       <com.doumee.huitongying.view.MyGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:id="@+id/gv_latest_shelves_home_mall"
+            android:numColumns="2"
+            android:horizontalSpacing="@dimen/margin_6"
+            android:verticalSpacing="@dimen/margin_6"
+                           ></com.doumee.huitongying.view.MyGridView>
+                       <!--requestFocus-->
+                   </LinearLayout>
+
+
+        </com.doumee.huitongying.view.MyFreshScrollview>
+
+
+    </com.doumee.huitongying.view.RefreshScrollviewLayout>
+
+
+</LinearLayout>

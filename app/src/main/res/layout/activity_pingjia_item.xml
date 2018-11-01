@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="青椒肉丝"
+        android:padding="@dimen/left_right_margin"
+        android:textColor="@color/Grey"
+        android:id="@+id/goods_name"
+        android:textSize="@dimen/content_text_size_16"
+        />
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:layout_height="1px"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:paddingBottom="@dimen/top_bottom_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分："
+            android:paddingTop="@dimen/top_bottom_margin"
+            android:paddingBottom="@dimen/top_bottom_margin"
+            android:id="@+id/label_1"
+            android:textSize="@dimen/content_text_size_16"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customRatingBar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_toRightOf="@+id/label_1"
+            android:paddingTop="@dimen/top_bottom_margin"
+            android:stepSize="1"
+            android:id="@+id/goods_score"
+            android:paddingBottom="@dimen/top_bottom_margin"
+            android:isIndicator="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价："
+            android:paddingTop="@dimen/top_bottom_margin"
+            android:paddingBottom="@dimen/top_bottom_margin"
+            android:id="@+id/label_2"
+            android:layout_below="@+id/label_1"
+            android:textSize="@dimen/content_text_size_16"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/goods_content"
+            android:layout_below="@+id/label_1"
+            android:padding="@dimen/left_right_margin"
+            android:layout_toRightOf="@id/label_2"
+            android:textSize="@dimen/content_text_size_16"
+            android:background="@drawable/edittext_bg"
+            android:gravity="left"
+            android:textColor="@color/Grey"
+            android:hint="请输入您的评价"/>
+    </RelativeLayout>
+</LinearLayout>

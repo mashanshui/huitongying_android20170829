@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.huixiangshenghuo.app.ui.activityshopcircle.GoodsFragment"
+    >
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/submit_bar"
+        ></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/submit_bar"
+        >
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/menu_list"
+            android:scrollbars="none"
+            android:layout_weight="2"
+
+            ></ListView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_bar"
+                android:text="菜单1"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/content_text_size_16"
+                android:textColor="@color/black"
+                android:id="@+id/menu_name"
+                />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                layout="@layout/line_view"
+                ></include>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/menu_content"
+                ></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:weightSum="4"
+        android:id="@+id/submit_bar"
+        android:layout_alignParentBottom="true"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="@dimen/bottom_button_text_size_18"
+            android:text="共0"
+            android:gravity="center"
+            android:id="@+id/sum_price_view"
+            android:background="@color/white"
+
+            />
+        <!--android:layout_marginLeft="10dp"-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="选好了"
+            android:textColor="@color/white"
+            android:id="@+id/submit_button"
+            android:textSize="@dimen/bottom_button_text_size_18"
+            android:background="@color/LightGrey"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/top_bottom_margin"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:id="@+id/shop_cart"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/iv_shopCart_fragmentGdoos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_shop_cart"
+            />
+        <!--android:src="@mipmap/gwc_icon_gray"-->
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:text="0"
+            android:gravity="center"
+            android:layout_gravity="top|right"
+            android:id="@+id/sum_text"
+            android:background="@drawable/red_round_gb"/>
+    </FrameLayout>
+</RelativeLayout>

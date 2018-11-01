@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mainBackColor"
+    >
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        ></include>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/yes_button"
+        android:id="@+id/list_view"
+        android:layout_below="@+id/title_bar"
+        >
+
+    </ListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:id="@+id/yes_button"
+        android:text="完成选择"
+        android:textColor="@color/white"
+        android:layout_above="@+id/line1"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:background="@drawable/button_red_bg"/>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/add_address"
+        android:id="@+id/line1"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:background="@drawable/adapter_select_grey"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/add_address"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/add_address_icon"
+            android:textColor="@color/LightGrey"
+            android:textSize="@dimen/bottom_button_text_size_18"
+            android:gravity="center"
+            android:drawablePadding="@dimen/left_right_margin"
+            android:text="添加收货地址"/>
+
+    </LinearLayout>
+</RelativeLayout>

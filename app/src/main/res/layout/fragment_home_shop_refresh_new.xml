@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_businessHead_new"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:background="?attr/colorPrimary">
+            <!--android:alpha="0"-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_businessHead_new"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingTop="16dp"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_home_add_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/content_text_size_16"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableRight="@mipmap/dw_icon"
+                android:text="选择城市"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_bar"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:text="搜索商户"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/left_right_margin"
+                android:id="@+id/search_bar_new"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:background="@drawable/bg_title_text_business_new"
+                android:textSize="@dimen/content_text_size_14"
+
+                android:drawableLeft="@mipmap/search_grey"/>
+            <!--android:textColor="@color/black"-->
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.huixiangshenghuo.app.view.RefreshScrollviewLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_sx_home_shop_refresh_new">
+
+        <com.huixiangshenghuo.app.view.MyFreshScrollview
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <com.bigkoo.convenientbanner.ConvenientBanner
+                        android:id="@+id/fh_ads_lyt_new"
+                        android:layout_width="match_parent"
+                        android:background="@color/colorGray"
+                        android:layout_height="136dp"
+                        android:visibility="gone"
+                        />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_menu_new"
+                        android:layout_width="match_parent"
+                        android:paddingTop="10dp"
+                        android:background="@color/white"
+                        android:layout_height="136dp"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:id="@+id/iv_group_new">
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/public_bg"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/left_right_margin"
+                        android:layout_marginTop="@dimen/margin_6"
+                        >
+                        <!-- android:layout_marginTop="@dimen/top_bottom_margin"-->
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/goods_type_new"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="11dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/relativeLayout11_new"
+                                android:layout_toRightOf="@+id/relativeLayout11_new"
+                                android:text="附近商户"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/content_text_size_16"/>
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout11_new"
+                                android:layout_width="4dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:background="@color/colorPrimaryDark">
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/content_text_size_14"
+                            android:gravity="center"
+                            android:id="@+id/more_new"
+                            android:textColor="@color/lightGrey"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@mipmap/arrow_right_gray"
+                            android:text="更多"
+                            android:visibility="gone"
+                            />
+                    </LinearLayout>
+        <com.huixiangshenghuo.app.view.MyListView
+            android:id="@+id/list_view_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="3dp"
+            >
+            <!--android:divider="@null"-->
+        </com.huixiangshenghuo.app.view.MyListView>
+
+                </LinearLayout>
+        </com.huixiangshenghuo.app.view.MyFreshScrollview>
+    </com.huixiangshenghuo.app.view.RefreshScrollviewLayout>
+
+</LinearLayout>

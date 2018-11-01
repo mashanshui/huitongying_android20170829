@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/left_right_margin"
+        android:background="@drawable/button_input_status_selector">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/bank_card"
+            android:id="@+id/logo"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="@color/black"
+                    android:text="中国工商银行|合肥马鞍山南路支行"
+                    android:textSize="@dimen/content_text_size_14"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bank_card"
+                    android:textColor="@color/grey"
+                    android:text="尾号(7488)"
+                    android:layout_marginTop="@dimen/top_bottom_margin"
+                    android:textSize="@dimen/content_text_size_14"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/button"
+                android:text="修改"
+                android:textSize="@dimen/content_text_size_16"
+                android:textColor="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_name_itemShopCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="11"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_remove_itemShopCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/tv_count_itemShopCart"
+        android:background="@drawable/icon_remove_gdoos_deatil"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_count_itemShopCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="3px"
+        android:layout_marginLeft="3px"
+        android:layout_toStartOf="@+id/iv_add_itemShopCart"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="0"
+        android:textSize="@dimen/content_text_size_16"
+        />
+
+    <ImageView
+        android:id="@+id/iv_add_itemShopCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_add_gdoos_deatil"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>

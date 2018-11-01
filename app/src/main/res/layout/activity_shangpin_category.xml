@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+    >
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <com.huixiangshenghuo.app.swipemenulistview.SwipeMenuListView
+        android:id="@+id/collector_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:smoothScrollbar="true"
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@+id/bt_shangpin_category_xfl"
+        android:layout_marginBottom="10dp"
+
+        >
+        <!--android:divider="#00000000"-->
+    </com.huixiangshenghuo.app.swipemenulistview.SwipeMenuListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:text="添加新分类"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bottom_button_text_size_18"
+        android:id="@+id/bt_shangpin_category_xfl"
+        android:background="@drawable/button_red_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>

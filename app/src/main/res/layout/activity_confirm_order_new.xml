@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"></include>
+
+    <include
+        android:id="@+id/label_1"
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/rel_bottom_order_detail_new"></include>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom_order_detail_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/left_right_margin">
+
+        <TextView
+            android:id="@+id/label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="待支付"
+            android:textColor="@color/Grey" />
+        <!--android:textSize="16sp"-->
+        <TextView
+            android:id="@+id/total_pay_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="@dimen/left_right_margin"
+
+            android:layout_toEndOf="@+id/label_1"
+            android:layout_toRightOf="@+id/label_1"
+            android:gravity="center"
+            android:text="￥0"
+            android:textColor="@color/colorPrimary" />
+        <!--android:textSize="16sp"-->
+        <Button
+            android:id="@+id/btn_order_submit_new"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:text="提交订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bottom_button_text_size_18" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/home_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/label_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_bar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/select_address_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/left_right_margin">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_text_size_16" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:layout_toRightOf="@+id/name"
+                    android:hint="请选择收货地址"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_text_size_16" />
+
+                <TextView
+                    android:id="@+id/address_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="@dimen/top_bottom_margin"
+                    android:text=""
+                    android:textColor="@color/Grey"
+                    android:textSize="@dimen/content_text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/right_arrow_gray" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/line_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/left_right_margin"></include>
+
+
+            <RadioGroup
+                android:id="@+id/pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/left_right_margin"
+                android:background="@color/white"
+                android:divider="@color/lineColor"
+                android:padding="@dimen/left_right_margin"
+                android:showDividers="middle">
+
+                <RadioButton
+                    android:id="@+id/tyb_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_bar"
+                    android:layout_marginTop="@dimen/top_bottom_margin"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@mipmap/money_icon"
+                    android:drawablePadding="@dimen/left_right_margin"
+                    android:drawableRight="@drawable/bg_rb_check_red"
+                    android:text="@string/tyb" />
+
+                <RadioButton
+                    android:id="@+id/jf_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_bar"
+                    android:layout_marginTop="@dimen/top_bottom_margin"
+                    android:button="@null"
+                    android:drawableLeft="@mipmap/integral_pay_icon"
+                    android:drawablePadding="@dimen/left_right_margin"
+                    android:drawableRight="@drawable/bg_rb_check_red"
+                    android:text="积分支付" />
+
+                <RadioButton
+                    android:id="@+id/ali_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_bar"
+                    android:layout_marginTop="@dimen/top_bottom_margin"
+                    android:button="@null"
+                    android:drawableLeft="@mipmap/zfb_icon"
+                    android:drawablePadding="@dimen/left_right_margin"
+                    android:drawableRight="@drawable/bg_rb_check_red"
+                    android:text="支付宝"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/wechat_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_bar"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:drawableLeft="@mipmap/wechat_icon"
+                    android:drawablePadding="@dimen/left_right_margin"
+
+                    android:drawableRight="@drawable/bg_rb_check_red"
+                    android:text="微信支付"
+
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/blank_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_bar"
+                    android:layout_marginTop="@dimen/top_bottom_margin"
+                    android:button="@null"
+                    android:drawableLeft="@mipmap/ylzf_icon"
+                    android:drawablePadding="@dimen/left_right_margin"
+                    android:drawableRight="@drawable/bg_rb_check_red"
+                    android:text="银联支付"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+
+            <com.huixiangshenghuo.app.view.MyListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/left_right_margin"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:paddingRight="@dimen/left_right_margin">
+                <!--android:layout_marginTop="@dimen/left_right_margin"-->
+            </com.huixiangshenghuo.app.view.MyListView>
+
+
+            <include
+                layout="@layout/line_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                ></include>
+            <!--android:layout_marginLeft="@dimen/left_right_margin"-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                android:padding="@dimen/left_right_margin">
+
+                <TextView
+                    android:id="@+id/tv_zongjia_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/textView10"
+                    android:layout_toRightOf="@+id/textView10"
+                    android:text="￥0"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="￥0"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/youfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_toLeftOf="@+id/paid"
+                    android:layout_toStartOf="@+id/paid"
+                    android:text="配送费:"
+                    android:textColor="@color/black" />
+                <!--
+                android:text="实付:"
+                -->
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_zongjia_new"
+                    android:layout_alignBottom="@+id/tv_zongjia_new"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="总计："
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/top_bottom_margin"
+                android:layout_marginTop="@dimen/top_bottom_margin"
+                android:background="@color/white"
+                android:padding="@dimen/left_right_margin"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_order_confirm_bz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="备注："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_text_size_16" />
+
+                <EditText
+                    android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/label_bar"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@+id/tv_order_confirm_bz"
+                    android:layout_toRightOf="@+id/tv_order_confirm_bz"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center|right"
+                    android:hint="选填"
+                    android:maxLength="20"
+                    android:paddingRight="@dimen/left_right_margin"
+                    android:textColor="@color/Grey"
+                    android:textSize="@dimen/content_text_size_16" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

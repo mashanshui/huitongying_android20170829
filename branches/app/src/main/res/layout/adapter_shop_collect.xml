@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_shop_collect"
+              android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:paddingTop="@dimen/top_bottom_margin"
+        android:background="@drawable/adapter_select_grey"
+        android:paddingBottom="@dimen/top_bottom_margin">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:background="@mipmap/business_default"
+            android:id="@+id/shop_collect_image"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_shop_collect_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上岛咖啡"
+                android:textColor="@color/black_deep"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/content_text_size_16"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/shop_collect_label_1"
+                android:layout_below="@+id/tv_item_shop_collect_shopname"
+                >
+
+                <RatingBar
+                    android:id="@+id/shop_collect_rating_bar"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/shop_collect_score_1"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1"
+                    android:isIndicator="true"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_item_shop_collect_salecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月销量：0"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:textSize="@dimen/bottom_text_size_12"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item_shop_collect_qs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起送￥0"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_item_shop_collect_xian"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:text="|"
+                    android:layout_toRightOf="@id/tv_item_shop_collect_qs"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/content_text_size_16"/>
+
+                <TextView
+                    android:id="@+id/tv_item_shop_collect_ps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送￥50"
+                    android:layout_toRightOf="@id/tv_item_shop_collect_xian"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_12"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_below="@+id/shop_collect_label_1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_shop_collect_lx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_item_shop_collect_add"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="合肥合肥合肥合肥合肥合肥合肥合肥合肥合肥合肥"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_item_shop_collect_dis"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dp"
+                    android:text="取消收藏"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

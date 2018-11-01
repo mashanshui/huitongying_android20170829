@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/lineColor"
+        android:showDividers="middle"
+        android:id="@+id/sort_menu"
+        android:dividerPadding="1px"
+        android:background="@color/white"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="综合排序"
+            android:button="@null"
+            android:textColor="@drawable/home_order_info_font_selecter"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:padding="@dimen/top_bottom_margin"
+            android:id="@+id/item_all"
+            android:checked="true"
+            android:background="@null"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="离我最近"
+            android:button="@null"
+            android:textColor="@drawable/home_order_info_font_selecter"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:padding="@dimen/top_bottom_margin"
+            android:id="@+id/item_sale"
+            android:background="@null"/>
+
+        <!--        <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="销量排序↓"
+                    android:button="@null"
+                    android:textColor="@drawable/home_order_info_font_selecter"
+                    android:textSize="@dimen/content_button_text_size_16"
+                    android:padding="@dimen/top_bottom_margin"
+                    android:id="@+id/item_sale"
+                    android:background="@null"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="价格排序↑"
+                    android:button="@null"
+                    android:textColor="@drawable/home_order_info_font_selecter"
+                    android:textSize="@dimen/content_button_text_size_16"
+                    android:padding="@dimen/top_bottom_margin"
+                    android:id="@+id/item_price"
+                    android:background="@null"/>-->
+
+    </RadioGroup>
+
+
+</LinearLayout>

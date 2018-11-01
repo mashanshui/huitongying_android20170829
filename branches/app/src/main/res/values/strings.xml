@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">惠享生活</string>
+    <string name="scan_title">扫一扫</string>
+    <string name="scan_tip">请将二维码置于取景框内扫描</string>
+    <string name="sd_light">闪光灯</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="home_page">首页</string>
+    <string name="home_mall">商城</string>
+    <string name="home_shop">商圈</string>
+    <string name="home_mine">我的</string>
+    <string name="input_username">请输入登录名</string>
+    <string name="input_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="edit_password">忘记密码？</string>
+    <string name="now_reg">立即注册</string>
+    <string name="reg">注册</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_phone_code">请输入验证码</string>
+    <string name="send_code">获取验证码</string>
+    <string name="next">下一步</string>
+    <string name="set_username">请设置登录账户</string>
+    <string name="set_password">请设置账户密码</string>
+    <string name="set_password_two">确认账户密码</string>
+    <string name="submit">提交</string>
+    <string name="password_error">两次输入密码不一致</string>
+    <string name="qiandao">签到</string>
+    <string name="message">消息</string>
+    <string name="input_loginname">请输入对方账户</string>
+    <string name="pay_type">转账方式</string>
+    <string name="input_money">请输入金额</string>
+    <string name="notes">备注</string>
+    <string name="pay_glad">惠宝</string>
+    <string name="ali_pay">支付宝</string>
+    <string name="submit_pay">确认转账</string>
+    <string name="pay_money">确认充值</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_error">支付失败</string>
+    <string name="confirm_money">确认提现</string>
+    <string name="gold">惠宝</string>
+    <string name="integral">积分</string>
+    <string name="wechat_pay">微信</string>
+    <string name="tyb">惠宝</string>
+    <string name="title_change_into">转入</string>
+
+    <string name="mapbar_prompt">提示</string>
+    <string name="des_image">豆米</string>
+    <string name="txt_str_yes">是</string>
+    <string name="txt_str_no">否</string>
+    <string name="txt_str_determine">确定</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="android_auto_update_dialog_title">发现新版本</string>
+    <string name="android_auto_update_notify_ticker">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_notify_content">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_dialog_btn_download">立即下载</string>
+    <string name="android_auto_update_dialog_btn_cancel">以后再说</string>
+    <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+    <string name="android_auto_update_dialog_checking">正在检查版本</string>
+    <array name="bank_list">
+        <item>中国银行</item>
+        <item>中国工商银行</item>
+        <item>中国建设银行</item>
+        <item>中国农业银行</item>
+        <item>中国招商银行</item>
+        <item>中国光大银行</item>
+        <item>中国中信银行</item>
+        <item>中国交通银行</item>
+        <item>中国民生银行</item>
+        <item>上海浦发银行</item>
+        <item>中国邮政储蓄银行</item>
+        <item>中国兴业银行</item>
+        <item>徽商银行</item>
+        <item>中信实业银行</item>
+        <item>中国民生银行</item>
+    </array>
+
+    <string name="xlistview_header_hint_normal">下拉即可刷新…</string>
+    <string name="xlistview_header_hint_ready">松开即可刷新…</string>
+    <string name="xlistview_header_hint_loading">加载中…</string>
+    <string name="xlistview_header_last_time">最后更新：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="text_no_data_gdoosCategory">没有相关数据</string>
+    <string name="text_no_order">您暂时还没有添加订单</string>
+    <dimen name="width_text_goodsFragment">100dp</dimen>
+    <string name="text_startSend_fragmentGdoos">还差￥%1$s</string>
+    <string name="text_allSure_fragmentGdoos">选好了</string>
+    <string name="text_businessTime_fragmentDetailBusiness">%1$s-%2$s</string>
+    <string name="text_totalPrice_orderSure">合计金额:     ￥%1$s</string>
+    <string name="order_info">订单详情</string>
+    <string name="order_state">订单状态</string>
+    <string name="loading">正在加载..</string>
+
+    <!--首页二级页面 邀请好友-->
+    <string name="text_share_id">分享ID</string>
+    <string name="text_share_link">我的分享链接</string>
+    <string name="text_copy_link">复制链接</string>
+
+    <string name="IdCardCheckStatus">对不起，只有实名认证用户才能进行该操作，请前往个人中心进行实名认证</string>
+
+    <string name="wechat_pay_string">请安装微信客户端，或者使用其它支付方式</string>
+
+</resources>

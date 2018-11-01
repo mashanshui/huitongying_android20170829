@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackColor"
+    tools:context="com.huixiangshenghuo.app.ui.activityshopcircle.ShopPicsActivity">
+    <include layout="@layout/title_bar_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:id="@+id/title_bar"></include>
+    <com.huixiangshenghuo.app.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:id="@+id/refresh"
+        android:layout_above="@+id/upload"
+        >
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/left_right_margin"
+            android:id="@+id/grid_view"
+            android:background="@null"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+           ></GridView>
+    </com.huixiangshenghuo.app.view.RefreshLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@drawable/public_bg"
+        android:id="@+id/delete_bar"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="全选"
+            android:gravity="center"
+            android:id="@+id/all"
+            android:textSize="@dimen/content_text_size_14"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="删除"
+            android:gravity="center"
+            android:id="@+id/delete"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/content_text_size_14"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:id="@+id/upload"
+        android:text="上传"
+        android:textSize="@dimen/bottom_button_text_size_18"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

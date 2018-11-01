@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackColor"
+    tools:context="com.huixiangshenghuo.app.ui.mine.OldPassActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:layout_marginTop="@dimen/top_bottom_margin"
+        android:padding="@dimen/left_right_margin"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:id="@+id/old_pass"
+        android:hint="输入旧密码"
+        android:textSize="@dimen/content_text_size_16"
+        android:background="@drawable/public_bg"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bottom_button_text_size_18"
+        android:layout_margin="@dimen/left_right_margin"
+        android:id="@+id/next"
+        android:background="@drawable/button_red_bg"/>
+</LinearLayout>

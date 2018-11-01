@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackColor"
+    android:orientation="vertical"
+    tools:context="com.huixiangshenghuo.app.ui.LoginActivity">
+
+    <ImageView
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_width"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"/>
+
+ <include layout="@layout/line_view"
+     android:layout_width="match_parent"
+     android:layout_marginTop="30dp"
+     android:layout_height="1px"></include>
+ <EditText
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/title_bar"
+     android:background="@color/white"
+
+     android:drawableLeft="@mipmap/account_icon"
+     android:paddingLeft="@dimen/left_right_margin"
+     android:drawablePadding="@dimen/left_right_margin"
+     android:textColor="@color/grey"
+     android:textSize="@dimen/content_text_size_16"
+     android:id="@+id/username"
+     android:hint="@string/input_username"
+     />
+    <!--android:maxLength="15"-->
+    <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:layout_height="1px"></include>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@color/white"
+        android:maxLength="15"
+        android:drawableLeft="@mipmap/password_icon"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:drawablePadding="@dimen/left_right_margin"
+        android:hint="@string/input_password"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_text_size_16"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        />
+    <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:layout_height="1px"></include>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bottom_button_text_size_18"
+        android:layout_margin="@dimen/left_right_margin"
+        android:id="@+id/login"
+        android:background="@drawable/button_red_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_text_size_14"
+            android:id="@+id/edit_password"
+            android:text="@string/edit_password"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:textSize="@dimen/content_text_size_14"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/grey"
+            android:id="@+id/reg"
+            android:text="@string/now_reg"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <!--    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_products_details"
+            android:layout_below="@+id/title_bar">-->
+
+
+    <com.doumee.huitongying.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_sx_review_details"
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@+id/ll_products_details">
+
+        <com.doumee.huitongying.view.MyListView
+            android:id="@+id/lv_review_details"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:layout_height="match_parent">
+        </com.doumee.huitongying.view.MyListView>
+
+    </com.doumee.huitongying.view.RefreshLayout>
+
+
+    <!-- </ScrollView>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_products_details"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_gwc_products_details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/shop_gwc">
+
+            <TextView
+                android:text="加入购物车"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView11"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/content_text_size_16"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gw_products_details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:text="立即购买"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/content_text_size_16"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

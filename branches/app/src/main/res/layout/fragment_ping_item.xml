@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    app:cardBackgroundColor="@android:color/white"
+                                    app:cardElevation="@null"
+                                    app:cardPreventCornerOverlap="true"
+                                    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="@dimen/face_width_56"
+            android:layout_height="@dimen/face_width_56"
+            android:id="@+id/iv_head"
+            android:background="@mipmap/header_img_112"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@id/iv_head"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_item_service_cellphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="1386*****2512"
+                    android:textColor="@color/Grey"
+                    android:textSize="@dimen/sp_14"/>
+
+                <TextView
+                    android:id="@+id/tv_item_service_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2016-05-05"
+                    android:textColor="@color/Grey"
+                    android:textSize="@dimen/sp_14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/left_right_margin">
+
+                <RatingBar
+                    android:id="@+id/rb_service_item_ping"
+                    style="@style/roomRatingBar"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1"
+                    android:isIndicator="true"
+                    android:layout_height="10dp"/>
+                <!-- android:layout_toRightOf="@+id/score_1"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:id="@+id/tv_service_item_ping_sh"
+                    android:layout_toRightOf="@id/rb_service_item_ping"
+                    android:visibility="gone"
+                    android:text="送货速度："
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/tv_service_item_ping_sh"
+                    android:text="28分钟"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_service_item_ping_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总体来说还星总体来说还星总体来说还星总体来说还星。"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_14"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

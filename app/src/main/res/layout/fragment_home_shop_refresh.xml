@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huixiangshenghuo.app.ui.fragments.HomeShopRefreshFragment">
+    <com.huixiangshenghuo.app.view.XListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view">
+
+    </com.huixiangshenghuo.app.view.XListView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <RelativeLayout
+            android:id="@+id/rl_businessHead"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:background="?attr/colorPrimary">
+            <!--android:alpha="0"-->
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_businessHead"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingTop="16dp"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_home_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/content_text_size_16"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableRight="@mipmap/dw_icon"
+                android:text="选择城市"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_bar"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:text="搜索商户"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/left_right_margin"
+                android:id="@+id/search_bar"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:background="@drawable/bg_title_text_business"
+                android:textSize="@dimen/content_text_size_14"
+                android:textColor="@color/white"
+                android:drawableLeft="@mipmap/search_btn_white"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

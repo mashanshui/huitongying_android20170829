@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent"
+              android:gravity="center"
+    >
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="美食"
+        android:button="@null"
+        android:textColor="@drawable/home_order_info_font_button_selecter"
+        android:textSize="@dimen/content_text_size_14"
+        android:gravity="center"
+        android:padding="@dimen/top_bottom_margin"
+        android:id="@+id/item_name"
+        android:background="@drawable/checkbox_yuanjiao"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+</LinearLayout>

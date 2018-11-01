@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mainBackColor"
+              android:orientation="vertical"
+              tools:context="com.huixiangshenghuo.app.ui.mine.MineRealActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/top_bottom_margin"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:paddingRight="@dimen/left_right_margin"
+                android:divider="@drawable/line_divider_bg"
+                android:showDividers="middle"
+                android:background="@drawable/public_bg">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_bar"
+                    android:background="@null"
+                    android:textSize="@dimen/content_text_size_16"
+                    android:maxLength="10"
+                    android:id="@+id/name"
+                    android:hint="请输入您的真实姓名"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_bar"
+                    android:background="@null"
+                    android:textSize="@dimen/content_text_size_16"
+                    android:maxLength="20"
+                    android:id="@+id/card"
+                    android:hint="请输入您的身份证号(如尾号是X请大写)"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_bar_height"
+                android:layout_margin="@dimen/left_right_margin"
+                android:background="@drawable/button_yellow_bg"
+                android:gravity="center"
+                android:text="小提示：请您按照下面步骤来操作可以更快通过审核"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/content_text_size_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/left_right_margin"
+                android:gravity="center"
+                android:text="1、上传手持身份证的自拍照"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/content_text_size_14"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/mine_image"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="@dimen/top_bottom_margin"
+                android:src="@mipmap/update_img_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_bar_height"
+                android:layout_margin="@dimen/left_right_margin"
+                android:background="@drawable/button_yellow_bg"
+                android:gravity="center"
+                android:text="请您的脸部和身份证清晰可见，不要重叠遮挡"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/content_text_size_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/left_right_margin"
+                android:gravity="center"
+                android:text="2、上传身份证正面照片"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/content_text_size_14"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/mine_card"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="@dimen/top_bottom_margin"
+                android:src="@mipmap/update_img_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_bar_height"
+                android:layout_margin="@dimen/left_right_margin"
+                android:background="@drawable/button_yellow_bg"
+                android:gravity="center"
+                android:text="请您的身份证摆放平整，并让身份证上的信息清晰可见，不要模糊"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/content_text_size_14"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_button_height"
+                android:text="提交审核"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bottom_button_text_size_18"
+                android:layout_margin="@dimen/left_right_margin"
+                android:id="@+id/submit"
+                android:background="@drawable/button_red_bg"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

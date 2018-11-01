@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackColor"
+    tools:context="com.huixiangshenghuo.app.ui.mine.MineOrderListActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:id="@+id/tab_bar"
+        android:background="@drawable/public_bg"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@null"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="全部"
+            android:gravity="center"
+            android:id="@+id/tab0"
+            android:textColor="@drawable/text_color_red_bg"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="未支付"
+            android:gravity="center"
+            android:id="@+id/tab1"
+            android:textColor="@drawable/text_color_red_bg"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="待发货"
+            android:gravity="center"
+            android:id="@+id/tab2"
+            android:textColor="@drawable/text_color_red_bg"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="待收货"
+            android:gravity="center"
+            android:id="@+id/tab3"
+            android:textColor="@drawable/text_color_red_bg"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="已完成"
+            android:id="@+id/tab4"
+            android:gravity="center"
+            android:textColor="@drawable/text_color_red_bg"/>
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/view_page"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottom_title_bar">55dp</dimen>
+    <dimen name="title_bar">48dp</dimen>
+    <dimen name="title_bar_height">48dp</dimen><!--顶部导航栏高度-->
+    <dimen name="bottom_bar_height">55dp</dimen><!--顶部导航栏高度-->
+    <dimen name="label_bar">33dp</dimen><!--输入框高度 / 内容部分按钮高度-->
+    <dimen name="title_text_size">20sp</dimen><!--顶部导航标题字号-->
+    <dimen name="title_right_text_size_16">16sp</dimen><!--顶部导航右侧功能文字字号-->
+    <dimen name="content_text_size_16">16sp</dimen><!--内容部分正常字号-->
+    <dimen name="content_text_size_14">14sp</dimen><!--内容部分偏小字号-->
+    <dimen name="content_button_text_size_16">16sp</dimen><!--内容部分按钮文字字号-->
+    <dimen name="bottom_text_size_12">12sp</dimen><!--底部选项栏文字字号-->
+    <dimen name="bottom_button_text_size_18">18sp</dimen><!--底部按钮文字字号-->
+    <dimen name="bottom_button_height">48dp</dimen><!--底部选项栏 / 底部悬浮按钮高度-->
+
+    <dimen name="left_right_margin">12dp</dimen><!--左右边距-->
+    <dimen name="top_bottom_margin">12dp</dimen><!--上下边距-->
+    <dimen name="yuan_corner">5px</dimen><!--圆角大小-->
+    <dimen name="face_width_56">56dp</dimen><!--头像大小-->
+    <dimen name="face_height_56">56dp</dimen><!--头像大小-->
+    <dimen name="face_width_34">34dp</dimen><!--头像大小-->
+    <dimen name="face_height_34">34dp</dimen><!--头像大小-->
+
+    <dimen name="shop_image_width">105dp</dimen><!--商家列表页图片尺寸-->
+    <dimen name="shop_image_height">80dp</dimen><!--商家列表页图片尺寸-->
+
+    <dimen name="goods_image_width">90dp</dimen><!--商品列表页图片尺寸-->
+    <dimen name="goods_image_height">70dp</dimen><!--商品列表页图片尺寸-->
+
+    <dimen name="goods_content_image_width">360dp</dimen><!--商品详情页图片尺寸-->
+    <dimen name="goods_content_image_height">270dp</dimen><!--商品详情页图片尺寸-->
+
+    <dimen name="activity_image_width">336dp</dimen><!--活动图片尺寸-->
+    <dimen name="activity_image_height">135dp</dimen><!--活动图片尺寸-->
+    <dimen name="jifen_height">200dp</dimen><!--活动图片尺寸-->
+    <dimen name="logo_width">100dp</dimen>
+
+    <dimen name="dp_5">5dp</dimen><!--Padding-->
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="text_padding_left">5dp</dimen>
+    <dimen name="face_width_30">30dp</dimen>
+    <dimen name="text_lg_px">11sp</dimen>
+
+    <dimen name="gudieview_width">6dp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+
+
+    <dimen name="goods_details_image_height">60dp</dimen><!--商品列表页图片尺寸-->
+
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+
+    <dimen name="text_size_18">18sp</dimen>
+    <!--内容区域左右边距-->
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+
+    <!--一般边距-->
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_fu18">-18dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+</resources>

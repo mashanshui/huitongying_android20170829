@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huixiangshenghuo.app.view.DialogLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ui8_wg_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/corners_bg"
+    android:orientation="vertical"
+    android_custom:minDialogWidth="238dp">
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/ui8_wg_dialog_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/ui8_wg_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/mapbar_prompt"
+            android:textColor="#42484b"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/ui8_wg_dialog_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ui8_wg_dialog_title"
+            android:contentDescription="@string/des_image"/>
+    </RelativeLayout>
+
+    <!-- 内容 -->
+
+    <ScrollView
+        android:id="@+id/ui8_wg_dialog_message"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:id="@+id/ui8_wg_dialog_message_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#FF333333"
+            android:textSize="19sp"/>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/ui8_wg_dialog_context"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"></FrameLayout>
+
+    <!-- 分割线 -->
+
+    <View
+        android:id="@+id/ui8_wg_dialog_line_below_content"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- 确定、取消等按钮 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 单个按钮 -->
+
+        <RelativeLayout
+            android:id="@+id/ui8_wg_dialog_btn_single"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/ui8_wg_bg_dialog_btn_single"
+            android:paddingBottom="7dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ui8_wg_dialog_btn_single_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/cancel"
+                android:textColor="#FF666666"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <!-- 多个按钮 -->
+
+        <LinearLayout
+            android:id="@+id/ui8_wg_dialog_btn_multiple"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/ui8_wg_dialog_btn2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_dialogbutton"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:text="@string/txt_str_yes"
+                    android:textColor="#007aff"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/ui8_wg_dialog_btn1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_dialogbutton"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:text="@string/txt_str_no"
+                    android:textColor="#007aff"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.huixiangshenghuo.app.view.DialogLayout>

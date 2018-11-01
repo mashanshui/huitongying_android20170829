@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sex_group"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:button="@null"
+            android:background="@drawable/button_input_status_selector"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="男"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:drawableRight="@drawable/checkbox_bg"
+            android:id="@+id/boy"
+            android:paddingRight="@dimen/left_right_margin"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:button="@null"
+            android:background="@drawable/button_input_status_selector"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="女"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:drawableRight="@drawable/checkbox_bg"
+            android:id="@+id/girl"
+            android:paddingRight="@dimen/left_right_margin"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:button="@null"
+            android:background="@drawable/button_input_status_selector"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="保密"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:drawableRight="@drawable/checkbox_bg"
+            android:id="@+id/no"
+            android:paddingRight="@dimen/left_right_margin"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

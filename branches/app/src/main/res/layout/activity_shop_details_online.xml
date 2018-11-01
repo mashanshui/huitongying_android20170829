@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        >
+
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:srcCompat="@mipmap/business_default"
+            android:id="@+id/iv_imgurl"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:text="正在\n营业"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/tv_operating_state"
+            android:textColor="@color/result_points"
+            />
+
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_imgurl"
+            android:layout_toEndOf="@+id/iv_imgurl"
+            android:id="@+id/textView9"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_shop_details_online_name"
+            android:layout_above="@+id/textView9"
+            android:layout_toRightOf="@+id/iv_imgurl"
+            android:layout_toEndOf="@+id/iv_imgurl"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_text_size_16"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/v_xiantiao"
+            android:maxEms="7"
+            android:layout_marginRight="6dp"
+            />
+
+        <TextView
+            android:text="月销售笔"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_shop_details_online_salenum"
+            android:layout_below="@+id/textView9"
+            android:layout_toRightOf="@+id/iv_imgurl"
+            android:layout_toEndOf="@+id/iv_imgurl"
+            android:layout_marginLeft="6dp"
+            android:textSize="@dimen/content_text_size_14"
+            />
+
+        <TextView
+            android:text="(包河店)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_shop_details_online_name"
+            android:layout_toRightOf="@+id/tv_shop_details_online_name"
+            android:layout_toEndOf="@+id/tv_shop_details_online_name"
+            android:id="@+id/tv_shop_details_online_addr"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_text_size_16"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:visibility="gone"
+            />
+
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/lineColor"
+            android:layout_marginRight="10dp"
+            android:id="@+id/v_xiantiao"
+            android:layout_toLeftOf="@+id/tv_operating_state"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignBottom="@+id/tv_operating_state"
+            android:layout_alignTop="@+id/tv_operating_state"
+            />
+
+        <TextView
+            android:text="1/1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/tv_shop_details"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/iv_imgurl"
+            android:layout_alignEnd="@+id/iv_imgurl"
+            android:gravity="center"
+            android:layout_gravity="top|right"
+            android:background="@drawable/touming_round_gb"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_height="1px"
+
+        ></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/label_bar"
+        android:layout_alignParentBottom="true"
+
+        android:gravity="center_vertical"
+        android:textSize="@dimen/content_text_size_16"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:id="@+id/tv_shop_details_online_notice"
+        android:drawableLeft="@mipmap/tz"
+        android:drawablePadding="@dimen/left_right_margin"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="满25减5元满25减5元满25减5元满25减5元满25减5元满25减5元满25减5元"
+        android:drawableRight="@mipmap/arrow_right_gray"
+        android:background="@color/white"
+
+        />
+
+    <include
+        layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_height="1px"
+
+        ></include>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white"
+        android:id="@+id/group"
+        android:layout_below="@+id/shop_info"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:id="@+id/goods"
+            android:textColor="@drawable/home_order_info_font_selecter"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:text="商品"/>
+        <!--      <RadioButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:button="@null"
+                  android:checked="false"
+                  android:id="@+id/server"
+                  android:textColor="@drawable/home_order_info_font_selecter"
+                  android:textSize="@dimen/content_button_text_size_16"
+                  android:text="商家"/>-->
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="false"
+            android:id="@+id/shop"
+            android:textColor="@drawable/home_order_info_font_selecter"
+            android:textSize="@dimen/content_button_text_size_16"
+            android:text="商家"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/group_line"
+        android:layout_below="@+id/group"
+        android:gravity="center_horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:checked="true"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/goods_s"
+            android:background="@color/colorPrimary"/>
+        <!--       <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="1dp"
+                   android:checked="true"
+                   android:layout_weight="1"
+                   android:button="@null"
+                   android:id="@+id/server_s"
+                   android:background="@color/white"/>-->
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:checked="true"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/shop_s"
+            android:background="@color/white"/>
+
+    </RadioGroup>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        layout="@layout/line_view"
+        android:layout_below="@+id/group_line"
+        android:id="@+id/ling"
+        ></include>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ling"
+        android:id="@+id/view_page">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_shop_order_manager_item_2"
+              android:descendantFocusability="blocksDescendants"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/top_bottom_margin"
+        android:paddingBottom="@dimen/top_bottom_margin">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/a2"
+            android:id="@+id/goods_image"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:id="@+id/goods_info"
+            android:layout_toRightOf="@+id/goods_image">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="肥东老母鸡"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:id="@+id/goods_name"
+                android:textSize="@dimen/content_text_size_16"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="38.00"
+                android:textColor="@color/lightGrey"
+                android:id="@+id/goods_price"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:textSize="@dimen/content_text_size_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:layout_below="@+id/goods_info"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/goods_image">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-02-08"
+                android:textColor="@color/lightGrey"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:id="@+id/date"
+                android:textSize="@dimen/content_text_size_14"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="×10"
+                android:textColor="@color/lightGrey"
+                android:id="@+id/goods_nn"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:textSize="@dimen/content_text_size_14"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

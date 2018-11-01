@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingTop="16dp"
+        android:paddingRight="@dimen/left_right_margin"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/app_name"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_share_home_pager_new"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:textSize="@dimen/content_text_size_14"
+            android:gravity="right|center_vertical"
+            android:visibility="visible"
+            android:layout_gravity="right"
+            android:drawableRight="@mipmap/code_share"
+            />
+
+    </FrameLayout>
+
+    <com.doumee.huitongying.view.RefreshScrollviewLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_sx_home_pager_new"
+
+        >
+
+        <com.doumee.huitongying.view.MyFreshScrollview
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+
+                  >
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+
+                      >
+
+                      <com.bigkoo.convenientbanner.ConvenientBanner
+                          android:id="@+id/fh_ads_lyt"
+                          android:layout_width="match_parent"
+                          android:background="@color/colorGray"
+                          android:layout_height="136dp"
+                          android:visibility="gone"
+                          />
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="@dimen/left_right_margin"
+                          android:background="@color/white"
+                          >
+
+                          <LinearLayout
+                              android:id="@+id/ll_beginner_guide_home_pager_new"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center_horizontal"
+                              >
+
+                              <ImageView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:src="@mipmap/mod_1"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/sp_14"
+                                  android:layout_marginTop="@dimen/dp_5"
+                                  android:text="新手指南"
+                                  />
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:id="@+id/ll_mine_real_home_pager_new"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center_horizontal"
+                              >
+
+                              <ImageView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:src="@mipmap/mod_2"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/sp_14"
+                                  android:layout_marginTop="@dimen/dp_5"
+                                  android:text="认证中心"
+                                  />
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:id="@+id/ll_recommended_management_home_page_new"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center_horizontal"
+                              >
+
+                              <ImageView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:src="@mipmap/mod_3"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/sp_14"
+                                  android:layout_marginTop="@dimen/dp_5"
+                                  android:text="推荐管理"
+                                  android:id="@+id/textView6"/>
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:id="@+id/ll_saoma_home_page_new"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center_vertical"
+                              android:gravity="center_horizontal"
+                              >
+
+                              <ImageView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:src="@mipmap/mod_4"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/sp_14"
+                                  android:layout_marginTop="@dimen/dp_5"
+                                  android:text="扫一扫"
+                                  />
+                          </LinearLayout>
+
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:id="@+id/ll_announcement_inform"
+                          android:layout_width="match_parent"
+                          android:layout_height="40dp"
+
+                          android:orientation="horizontal"
+                          android:paddingRight="@dimen/left_right_margin"
+                          android:layout_marginTop="@dimen/margin_6"
+                          android:background="@color/white"
+                          >
+                          <!--android:background="@drawable/public_bg"-->
+                          <RelativeLayout
+                              android:layout_width="wrap_content"
+                              android:layout_weight="1"
+                              android:layout_height="match_parent">
+
+                              <TextView
+
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_centerVertical="true"
+                                  android:layout_marginLeft="11dp"
+                                  android:layout_marginStart="5dp"
+                                  android:layout_toEndOf="@+id/relativeLayout11"
+                                  android:layout_toRightOf="@+id/relativeLayout11"
+                                  android:text="公告通知"
+                                  android:textColor="@color/black"
+                                  android:textSize="@dimen/content_text_size_16"/>
+
+                              <RelativeLayout
+                                  android:id="@+id/relativeLayout11"
+                                  android:layout_width="4dp"
+                                  android:layout_height="20dp"
+                                  android:layout_alignParentLeft="true"
+                                  android:layout_marginLeft="10dp"
+                                  android:layout_alignParentStart="true"
+                                  android:layout_centerVertical="true"
+                                  android:background="@color/colorPrimaryDark">
+                              </RelativeLayout>
+
+                          </RelativeLayout>
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:textSize="@dimen/content_text_size_14"
+                              android:gravity="center"
+                              android:id="@+id/more"
+                              android:textColor="@color/lightGrey"
+                              android:drawablePadding="8dp"
+                              android:drawableRight="@mipmap/arrow_right_gray"
+                              android:text="查看更多"/>
+                      </LinearLayout>
+
+                      <include
+                          layout="@layout/line_view"
+                          android:layout_width="match_parent"
+                          android:layout_height="1px"></include>
+
+                      <com.doumee.huitongying.view.MyListView
+                          android:id="@+id/lv_notice_home_pager_new"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+
+
+                          ></com.doumee.huitongying.view.MyListView>
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="40dp"
+
+                          android:orientation="horizontal"
+
+                          android:layout_marginTop="@dimen/margin_6">
+                          <!--
+                          android:paddingRight="@dimen/left_right_margin"
+                          android:background="@drawable/public_bg"
+                          -->
+                          <RelativeLayout
+                              android:layout_width="wrap_content"
+                              android:layout_weight="1"
+                              android:layout_height="match_parent"
+                              android:background="@color/white"
+                              >
+
+                              <TextView
+
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_centerVertical="true"
+                                  android:layout_marginLeft="11dp"
+                                  android:layout_marginStart="5dp"
+                                  android:layout_toEndOf="@+id/relativeLayout22"
+                                  android:layout_toRightOf="@+id/relativeLayout22"
+                                  android:text="猜你喜欢"
+                                  android:textColor="@color/black"
+                                  android:textSize="@dimen/content_text_size_16"/>
+
+                              <RelativeLayout
+                                  android:id="@+id/relativeLayout22"
+                                  android:layout_width="4dp"
+                                  android:layout_height="20dp"
+                                  android:layout_alignParentLeft="true"
+                                  android:layout_marginLeft="10dp"
+                                  android:layout_alignParentStart="true"
+                                  android:layout_centerVertical="true"
+                                  android:background="@color/colorPrimaryDark">
+                              </RelativeLayout>
+
+                          </RelativeLayout>
+                      </LinearLayout>
+
+                      <include
+                          layout="@layout/line_view"
+                          android:layout_width="match_parent"
+                          android:layout_height="1px"></include>
+
+                      <com.doumee.huitongying.view.MyGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:id="@+id/gv_recommend_home_page_new"
+            android:numColumns="2"
+            android:horizontalSpacing="@dimen/margin_6"
+            android:verticalSpacing="@dimen/margin_6"
+                          ></com.doumee.huitongying.view.MyGridView>
+
+                  </LinearLayout>
+        </com.doumee.huitongying.view.MyFreshScrollview>
+    </com.doumee.huitongying.view.RefreshScrollviewLayout>
+</LinearLayout>

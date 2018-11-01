@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分类筛选"
+        android:padding="@dimen/top_bottom_margin"
+        android:background="@color/white"
+        />
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/type_menu"
+        android:numColumns="4"
+        android:background="@color/white"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:cacheColorHint="@null"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:paddingBottom="@dimen/top_bottom_margin"
+        android:scrollbars="none"
+        ></GridView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="区域筛选"
+        android:padding="@dimen/top_bottom_margin"
+        android:background="@color/white"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/area_menu"
+        android:numColumns="4"
+        android:background="@color/white"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:cacheColorHint="@null"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:paddingBottom="@dimen/top_bottom_margin"
+        android:scrollbars="none"
+        ></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/public_bg"
+        android:paddingTop="1px"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bottom_button_height"
+            android:id="@+id/clear_button"
+            android:background="@drawable/button_input_status_selector"
+            android:text="重置"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/bottom_button_text_size_18"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bottom_button_height"
+            android:id="@+id/yes_button"
+            android:background="@drawable/button_input_status_selector"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/bottom_button_text_size_18"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+    <!--android:background="@color/colorPrimary"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:id="@+id/ll_product_search"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+
+        <com.huixiangshenghuo.app.view.EditTextWithDel
+            android:id="@+id/edt_product_search"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="@dimen/label_bar"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:background="@drawable/black_round_out"
+            android:hint="商品搜索"
+            android:textColor="#515151"
+            android:textSize="16dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="@dimen/label_bar"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/content_text_size_16"
+            android:id="@+id/cancel_button"
+            android:background="@null"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.huixiangshenghuo.app.view.RefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/refresh"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:layout_marginRight="@dimen/margin_6"
+            android:layout_marginBottom="@dimen/margin_6"
+            >
+
+            <com.huixiangshenghuo.app.view.MyGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:scrollbars="none"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:id="@+id/gv_searchprodut"
+                android:paddingTop="3dp"
+                android:numColumns="2"
+                android:horizontalSpacing="@dimen/margin_6"
+                android:verticalSpacing="@dimen/margin_6"
+
+                />
+        </com.huixiangshenghuo.app.view.RefreshLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/last_record">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:paddingTop="@dimen/top_bottom_margin"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="@dimen/top_bottom_margin"
+                android:gravity="center_vertical"
+                android:background="@color/base_text_press_color"
+                android:text="历史搜索"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_view">
+
+            </ListView>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

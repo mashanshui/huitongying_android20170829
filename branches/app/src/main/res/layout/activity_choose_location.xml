@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_main_lyt"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/app_main_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        ></include>
+
+    <LinearLayout
+        android:background="@color/colorContentBg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_oval_white"
+            android:layout_height="28dp">
+
+            <ImageView
+                android:id="@+id/acl_search_img"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:src="@drawable/search"/>
+
+            <EditText
+                android:layout_marginRight="28dp"
+                android:id="@+id/acl_search_edit"
+                android:layout_toRightOf="@id/acl_search_img"
+                android:hint="搜索位置"
+                style="@style/SearchEditItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <RelativeLayout
+                android:id="@+id/acl_clear_search_lyt"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_width="40dp"
+                android:layout_height="28dp">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:src="@drawable/close"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/acl_map_view"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/jg_up"/>
+        </FrameLayout>
+
+        <ListView
+            android:background="@drawable/bottom_border"
+            android:paddingTop="0.5dp"
+            android:paddingBottom="0.5dp"
+            android:paddingLeft="@dimen/dp_12"
+            android:id="@+id/acl_address_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/line"
+            android:dividerHeight="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>

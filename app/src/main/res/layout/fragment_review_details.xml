@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.huixiangshenghuo.app.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_sx_review_details">
+    <com.huixiangshenghuo.app.view.MyListView
+        android:id="@+id/lv_review_details"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent">
+    </com.huixiangshenghuo.app.view.MyListView>
+
+    </com.huixiangshenghuo.app.view.RefreshLayout>
+</LinearLayout>

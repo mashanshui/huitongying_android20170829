@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackColor"
+    tools:context="com.huixiangshenghuo.app.ui.mine.AboutActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_bottom_margin"
+        android:textSize="@dimen/content_text_size_14"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:id="@+id/version"
+        android:text="惠享生活v1.0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        android:textColor="@color/black"
+        android:text=""
+        android:padding="@dimen/left_right_margin"
+        android:textSize="@dimen/content_text_size_14"/>
+
+
+
+</LinearLayout>

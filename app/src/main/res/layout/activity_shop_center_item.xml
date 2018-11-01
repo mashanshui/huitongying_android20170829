@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/left_right_margin"
+        android:background="@drawable/button_input_status_selector">
+
+        <ImageView
+            android:layout_width="@dimen/face_height_56"
+            android:layout_height="@dimen/face_height_56"
+            android:src="@mipmap/header_img_bg"
+            android:scaleType="centerCrop"
+            android:id="@+id/image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="订单编号：201157888"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/black"
+            android:id="@+id/name"
+            android:layout_marginLeft="@dimen/left_right_margin"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size_14"
+            android:text="价格："
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/grey"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="5dp"
+            android:id="@+id/label"
+            android:layout_marginLeft="@dimen/left_right_margin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size_14"
+            android:text="¥500.00"
+            android:layout_toRightOf="@+id/label"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="5dp"
+            android:id="@+id/price"
+            android:layout_marginLeft="@dimen/left_right_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_text_size_14"
+            android:text="2016-12-14 13:30"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/lightGrey"
+            android:layout_below="@+id/label"
+            android:layout_marginTop="5dp"
+            android:id="@+id/date"
+            android:layout_marginLeft="@dimen/left_right_margin"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

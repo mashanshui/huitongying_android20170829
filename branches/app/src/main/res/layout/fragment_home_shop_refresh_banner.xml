@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huixiangshenghuo.app.ui.fragments.HomeShopRefreshFragment">
+        <com.doumee.huitongying.view.BannerView
+            android:id="@+id/view_banner"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:visibility="gone"
+            />
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/fh_ads_lyt2"
+            android:layout_width="match_parent"
+            android:background="@color/colorGray"
+            android:layout_height="210dp"/>
+
+</FrameLayout>

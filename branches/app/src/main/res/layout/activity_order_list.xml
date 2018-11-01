@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackColor"
+    android:orientation="vertical"
+    tools:context="com.huixiangshenghuo.app.ui.home.OrderListActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:background="@color/white"
+        android:id="@+id/goods_type_bar"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/goods_type"
+                android:gravity="center"
+                android:button="@null"
+                android:paddingRight="@dimen/left_right_margin"
+                android:textColor="@drawable/text_color_red_bg"
+                android:textSize="@dimen/content_button_text_size_16"
+                android:drawablePadding="5dp"
+                android:checked="true"
+                android:text="惠宝总账"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_weight="1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/goods_sort"
+                android:button="@null"
+                android:textColor="@drawable/text_color_red_bg"
+                android:textSize="@dimen/content_button_text_size_16"
+                android:drawablePadding="5dp"
+                android:text="积分总账"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></include>
+    <com.doumee.huitongying.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view"
+            android:background="@color/white">
+
+        </ListView>
+
+    </com.doumee.huitongying.view.RefreshLayout>
+
+</LinearLayout>

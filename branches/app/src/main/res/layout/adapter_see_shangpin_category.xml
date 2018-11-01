@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_shangpi_category"
+        >
+
+        <TextView
+            android:text="商品分类"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_see_shangpin_category"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:text="共10件商品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_see_shangpin_num"
+            android:layout_below="@+id/tv_see_shangpin_category"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:text="排序码1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_see_shangpin_px"
+            android:layout_alignBaseline="@+id/tv_see_shangpin_num"
+            android:layout_alignBottom="@+id/tv_see_shangpin_num"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

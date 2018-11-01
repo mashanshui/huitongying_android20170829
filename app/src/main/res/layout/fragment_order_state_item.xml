@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:layout_marginTop="@dimen/top_bottom_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear111"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_up"
+                android:layout_width="5px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2sp"
+                android:background="#EB651A"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/face_width_30"
+                android:layout_height="@dimen/face_height_34"
+                android:id="@+id/image"
+                android:src="@mipmap/business_default"
+                android:layout_gravity="center_horizontal"
+
+                />
+            <!--android:scaleType="fitXY"-->
+            <TextView
+                android:id="@+id/text_down"
+                android:layout_width="5px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2sp"
+                android:background="#EB651A"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/state_bar"
+                android:layout_marginTop="@dimen/top_bottom_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:textSize="@dimen/content_text_size_14"
+                    android:id="@+id/state"
+                    android:layout_weight="1"
+                    android:text="待付款"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:textSize="@dimen/content_text_size_14"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    android:text="12-01 12:00:00"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notes"
+                android:textSize="@dimen/content_text_size_14"
+                android:layout_below="@+id/state_bar"
+                android:layout_marginTop="@dimen/top_bottom_margin"
+                android:layout_marginBottom="@dimen/top_bottom_margin"
+                android:textColor="@color/LightGrey"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:text="请尽快付款"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

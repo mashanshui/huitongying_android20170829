@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/left_right_margin"
+        android:id="@+id/name"
+        android:textSize="@dimen/content_text_size_16"
+        android:text="豆米科技"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:textSize="@dimen/content_text_size_14"
+        android:id="@+id/address"
+        android:paddingBottom="@dimen/top_bottom_margin"
+        android:text="地址:合肥西湖国际广场"/>
+
+</LinearLayout>

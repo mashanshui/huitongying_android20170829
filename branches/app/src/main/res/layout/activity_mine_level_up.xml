@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/mainBackColor"
+              tools:context="com.huixiangshenghuo.app.ui.mine.MineLevelUpActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:textColor="@color/grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:text="升级成为VIP会员"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/public_bg"
+        android:divider="@drawable/line_divider_bg"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="每日积分转换率"
+                android:textSize="@dimen/content_text_size_16"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey"
+                android:text="0%"
+                android:id="@+id/bili"
+                android:textSize="@dimen/content_text_size_16"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="升级费用"
+                android:textSize="@dimen/content_text_size_16"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey"
+                android:text="¥0.00"
+                android:id="@+id/price"
+                android:textSize="@dimen/content_text_size_16"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:textColor="@color/grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:text="支付方式"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:id="@+id/pay_type"
+        android:divider="@drawable/line_divider_bg">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:button="@null"
+            android:id="@+id/pay_gold"
+            android:drawableRight="@drawable/checkbox_bg"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:text="@string/gold"
+            android:textSize="@dimen/content_text_size_16"
+            android:drawableLeft="@mipmap/jinbi_icon"
+            android:drawablePadding="@dimen/left_right_margin"
+            android:visibility="visible"
+            android:checked="true"
+            android:background="@drawable/button_input_status_selector"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:button="@null"
+            android:id="@+id/pay_ali"
+            android:drawableRight="@drawable/checkbox_bg"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="@string/ali_pay"
+            android:drawableLeft="@mipmap/zfb_icon"
+            android:drawablePadding="@dimen/left_right_margin"
+            android:background="@drawable/button_input_status_selector"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar"
+            android:button="@null"
+            android:id="@+id/rb_pay_wecha_up"
+            android:drawableRight="@drawable/checkbox_bg"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:textSize="@dimen/content_text_size_16"
+            android:text="@string/wechat_pay"
+            android:drawableLeft="@mipmap/wechat_icon"
+            android:drawablePadding="@dimen/left_right_margin"
+            android:background="@drawable/button_input_status_selector"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:text="确认升级"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bottom_button_text_size_18"
+        android:layout_margin="@dimen/left_right_margin"
+        android:id="@+id/submit"
+        android:background="@drawable/button_red_bg"/>
+
+</LinearLayout>

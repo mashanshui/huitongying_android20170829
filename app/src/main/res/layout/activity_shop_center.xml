@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackColor"
+    tools:context="com.huixiangshenghuo.app.ui.mine.ShopCenterActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单总数"
+            android:textColor="@color/white"
+            android:textSize="@dimen/content_text_size_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/top_bottom_margin"
+            android:textStyle="bold"
+            android:id="@+id/order_num"
+            android:textSize="35sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:text="订单明细"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_text_size_16"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:gravity="center_vertical"
+        />
+      <include layout="@layout/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+              ></include>
+    <com.huixiangshenghuo.app.view.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/refresh">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/list_view">
+
+        </ListView>
+
+    </com.huixiangshenghuo.app.view.RefreshLayout>
+
+</LinearLayout>

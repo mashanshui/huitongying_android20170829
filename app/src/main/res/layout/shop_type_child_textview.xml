@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:background="@color/white"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:gravity="center_vertical"
+        android:background="@drawable/button_input_status_selector"
+        android:text="分组管理"
+        android:id="@+id/tv_child"
+        android:paddingLeft="48dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_text_size_14"
+        />
+
+
+</LinearLayout>

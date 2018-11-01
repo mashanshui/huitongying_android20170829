@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/tv_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="24dp"
+                android:text="积分："
+                android:textColor="@color/LightGrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_kucun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_jifen"
+                android:layout_marginLeft="116dp"
+                android:text="库存量："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_jifen"
+                android:layout_toRightOf="@+id/tv_jifen"
+                android:text=""
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_jifen"
+                android:layout_toRightOf="@+id/tv_kucun"
+                android:text=""
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@mipmap/delete_small" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@color/white"
+            android:padding="@dimen/left_right_margin">
+            <!--android:layout_marginTop="20dp"-->
+            <LinearLayout
+                android:id="@+id/add_button_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/bt_move_products_details"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/goods_add_button_selector"
+                    android:text="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/title_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_button_text_size_16" />
+
+                <Button
+                    android:id="@+id/bt_add_products_details"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@drawable/goods_add_button_selector"
+                    android:text="+"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/title_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_name_itemShopCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:singleLine="true"
+                android:text="购买数量"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_button_text_size_16" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></include>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_button_height"
+            android:background="@drawable/button_red_bg"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bottom_button_text_size_18" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/margin_8"
+        app:srcCompat="@mipmap/about_icon" />
+
+</RelativeLayout>

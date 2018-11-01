@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackColor"
+    tools:context="com.huixiangshenghuo.app.ui.mine.MineBankCardActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:paddingTop="@dimen/top_bottom_margin"
+        android:divider="@null"
+        android:dividerHeight="@dimen/top_bottom_margin"
+        android:layout_weight="1"
+        ></ListView>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/bottom_button_height"
+         android:background="@drawable/button_red_bg"
+         android:textColor="@color/white"
+         android:id="@+id/add"
+         android:text="添加银行卡"
+         android:textSize="@dimen/bottom_button_text_size_18"
+         android:layout_margin="@dimen/left_right_margin"/>
+</LinearLayout>

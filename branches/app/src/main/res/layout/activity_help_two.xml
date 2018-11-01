@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackColor"
+    android:orientation="vertical"
+    tools:context="com.huixiangshenghuo.app.ui.mine.HelpTwoActivity">
+    <include layout="@layout/title_bar_1"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        ></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/left_right_margin"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_text_size_16"
+        android:text="意见描述"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/public_bg"
+        android:hint="请输入您的宝贵意见"
+        android:padding="@dimen/left_right_margin"
+        android:gravity="left"
+        android:id="@+id/content"
+        android:maxLength="50"
+        android:textSize="@dimen/content_text_size_16"
+        />
+
+</LinearLayout>
